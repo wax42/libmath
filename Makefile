@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: smokhtar <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: vguerand <vguerand@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/13 18:05:18 by smokhtar          #+#    #+#              #
-#    Updated: 2019/02/13 18:05:20 by smokhtar         ###   ########.fr        #
+#    Updated: 2019/04/22 18:33:23 by vguerand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ OBJ_DIR			:=		./objs
 
 SRC_NAME = 	m_delta.c  		\
 			m_vec_add.c  	\
-			m_vec_sou.c  	\
+			m_vec_sub.c  	\
 			m_vec2_create.c  \
 			m_vec2_mul.c  	\
 			m_vec2_div.c  	\

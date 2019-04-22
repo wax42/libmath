@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   m_vec3_mul.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smokhtar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vguerand <vguerand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 18:26:09 by smokhtar          #+#    #+#             */
-/*   Updated: 2019/02/13 18:26:10 by smokhtar         ###   ########.fr       */
+/*   Updated: 2019/04/22 18:29:36 by vguerand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ t_vect		m_vec3_mul(const t_vect a, const float b)
 {
 	t_vect	tmp;
 
-	tmp[0] = a[0] * b;
-	tmp[1] = a[1] * b;
-	tmp[2] = a[2] * b;
+	tmp.x = a.x * b;
+	tmp.y = a.y * b;
+	tmp.z = a.z * b;
 	return (tmp);
 }

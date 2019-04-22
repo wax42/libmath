@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lib_math.h                                         :+:      :+:    :+:   */
+/*   libmaths.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smokhtar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vguerand <vguerand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/30 15:03:20 by smokhtar          #+#    #+#             */
-/*   Updated: 2018/05/30 15:03:22 by smokhtar         ###   ########.fr       */
+/*   Updated: 2019/04/22 18:33:07 by vguerand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBMATHS_H
 # define LIBMATHS_H
-# include <math.h>
 
+
+# include  <math.h> 
 /*
 **	t_vect(x;y;z)s
 **	t_point(x;y;z)
@@ -23,9 +24,29 @@
 **	t_cylindre(x;y;z;r;h)
 */
 
-typedef	float	t_vect __attribute__((vector_size(3*sizeof(float))));
-typedef	int		t_point __attribute__((vector_size(3*sizeof(int))));
-typedef	int		t_sphere __attribute__((vector_size(4*sizeof(float))));
+
+
+
+typedef struct	s_vect
+{
+	int				x;
+    int             y;
+    int             z;
+}				t_vect;
+
+
+typedef struct	s_point
+{
+	float				x;
+    float               y;
+    float               z;
+}				t_point;
+
+
+// typedef	int		t_sphere __attribute__((vector_size(4*sizeof(float))));
+
+
+
 
 t_vect		m_delta(float a, float b, float c);
 

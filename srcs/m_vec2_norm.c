@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   m_vec2_norm.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smokhtar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vguerand <vguerand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 19:10:54 by smokhtar          #+#    #+#             */
-/*   Updated: 2019/02/13 19:10:56 by smokhtar         ###   ########.fr       */
+/*   Updated: 2019/04/22 18:27:00 by vguerand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 float	m_vec2_norm(t_vect a)
 {
-	return (sqrt(a[0] * a[0] + a[1] * a[1]));
+	return (sqrt(a.x * a.x + a.y * a.y));
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   m_vec2_dot.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smokhtar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vguerand <vguerand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 18:25:47 by smokhtar          #+#    #+#             */
-/*   Updated: 2019/02/13 18:25:48 by smokhtar         ###   ########.fr       */
+/*   Updated: 2019/04/22 18:25:33 by vguerand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 float		m_vec2_dot(const t_vect a, const t_vect b)
 {
-	return (a[0] * b[0] + a[1] * b[1]);
+	return (a.x * b.x + a.y * b.y);
 }

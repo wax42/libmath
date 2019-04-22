@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   m_vec2_sou.c                                       :+:      :+:    :+:   */
+/*   m_vec_sub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smokhtar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vguerand <vguerand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/13 18:25:29 by smokhtar          #+#    #+#             */
-/*   Updated: 2019/02/13 18:25:30 by smokhtar         ###   ########.fr       */
+/*   Created: 2019/04/22 18:22:58 by vguerand          #+#    #+#             */
+/*   Updated: 2019/04/22 18:33:51 by vguerand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libmaths.h"
 
-t_vect		m_vec_sou(const t_vect a, const t_vect b)
+t_vect		m_vec_add(const t_vect a, const t_vect b)
 {
-	return (a - b);
+	t_vect c;
+
+	c.x = a.x - b.x;
+	c.y = a.y - b.y;
+	c.z = a.z - b.z;
+	return (c);
 }

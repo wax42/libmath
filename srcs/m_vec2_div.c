@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   m_vec2_div.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smokhtar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vguerand <vguerand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 18:25:39 by smokhtar          #+#    #+#             */
-/*   Updated: 2019/02/13 18:25:40 by smokhtar         ###   ########.fr       */
+/*   Updated: 2019/04/22 18:34:13 by vguerand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ t_vect		m_vec2_div(const t_vect a, const float b)
 	t_vect	tmp;
 
 	if (b == 0)
-		return (tmp = (t_vect){0});
-	tmp[0] = a[0] / b;
-	tmp[1] = a[1] / b;
+		return (tmp = (t_vect){0, 0, 0});
+	tmp.x = a.x / b;
+	tmp.y = a.y / b;
 	return (tmp);
 }

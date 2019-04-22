@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   m_vec3_dot.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smokhtar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vguerand <vguerand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 18:26:18 by smokhtar          #+#    #+#             */
-/*   Updated: 2019/02/13 18:26:19 by smokhtar         ###   ########.fr       */
+/*   Updated: 2019/04/22 18:29:16 by vguerand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 float		m_vec3_dot(const t_vect a, const t_vect b)
 {
-	return (a[0] * b[0] + a[1] * b[1] + a[2] * b[2]);
+	return (a.x * b.x + a.y * b.y + a.z * b.z);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   m_vec2_create.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smokhtar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vguerand <vguerand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/13 19:11:38 by smokhtar          #+#    #+#             */
-/*   Updated: 2019/02/13 19:11:40 by smokhtar         ###   ########.fr       */
+/*   Updated: 2019/04/22 18:23:57 by vguerand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ t_vect	m_vec2_create(float x, float y)
 {
 	t_vect	a;
 
-	a[0] = x;
-	a[1] = y;
-	a[2] = 0;
+	a.x = x;
+	a.y = y;
+	a.z = 0;
 	return (a);
 }
